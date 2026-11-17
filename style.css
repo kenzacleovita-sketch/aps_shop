@@ -1,5 +1,4 @@
 
-/* Pengaturan dasar */
 * {
     margin: 0;
     padding: 0;
@@ -7,191 +6,161 @@
     font-family: Arial, sans-serif;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
-    background-color: #f5f6fa;
-    color: #333;
+    background: #fffaf3;
+    color: #392b23;
 }
 
-/* Navbar */
 header {
-    background-color: #243b55;
+    background: #c66b36;
     color: white;
-    padding: 20px 8%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header h1 span {
-    color: #f7c873;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 15px;
-}
-
-nav a:hover {
-    color: #f7c873;
-}
-
-/* Hero */
-.hero {
-    min-height: 350px;
-    background: linear-gradient(
-        120deg, #243b55, #41658a
-    );
-    display: flex;
-    align-items: center;
-    padding: 50px 8%;
-    color: white;
-}
-
-.hero-text h2 {
-    font-size: 36px;
-    margin-bottom: 15px;
-}
-
-.hero-text p {
-    font-size: 17px;
-    margin-bottom: 25px;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #f7c873;
-    color: #243b55;
-    padding: 12px 20px;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-}
-
-.btn:hover {
-    background-color: #e9b54f;
-}
-
-/* Produk */
-.produk {
-    padding: 60px 8%;
+    padding: 25px;
     text-align: center;
 }
 
-.produk h2 {
-    font-size: 30px;
-    color: #243b55;
+header h2 {
+    letter-spacing: 3px;
+    margin-bottom: 8px;
 }
 
-.subjudul {
-    margin: 10px 0 30px;
-    color: #777;
+.welcome {
+    padding: 40px 20px;
+    background: #f6dfc5;
 }
 
-.produk-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-.card {
-    background-color: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.gambar {
-    background-color: #edf1f6;
-    font-size: 65px;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-.card h3 {
+.welcome h1 {
+    color: #a64f25;
     margin-bottom: 10px;
 }
 
+.category, .menu {
+    padding: 30px 20px;
+}
+
+.category h2, .menu h2 {
+    margin-bottom: 20px;
+    color: #a64f25;
+}
+
+.categories {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+}
+
+.categories span {
+    background: #f3dfcb;
+    padding: 12px;
+    border-radius: 20px;
+    white-space: nowrap;
+    font-size: 13px;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 0 3px 10px #e9daca;
+}
+
+.card img {
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 9px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
 .card p {
-    color: #777;
-    font-size: 14px;
+    color: #c66b36;
+    font-weight: bold;
     margin-bottom: 15px;
 }
 
-.card h4 {
-    color: #243b55;
-    font-size: 18px;
+.card a {
+    display: block;
+    text-align: center;
+    background: #c66b36;
+    color: white;
+    padding: 10px 5px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.pesan {
+    padding: 30px 20px;
+    background: #f6dfc5;
+}
+
+.pesan h2 {
+    color: #a64f25;
+    margin-bottom: 10px;
+}
+
+.pesan p {
     margin-bottom: 20px;
 }
 
-/* Tentang */
-.tentang {
-    background-color: #e8edf3;
-    padding: 50px 10%;
-    text-align: center;
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.tentang h2,
-.kontak h2 {
-    margin-bottom: 20px;
-    color: #243b55;
+label {
+    font-weight: bold;
 }
 
-.tentang p {
-    line-height: 1.8;
-    max-width: 700px;
-    margin: auto;
+input, select, textarea {
+    padding: 13px;
+    border: 1px solid #dec4ac;
+    border-radius: 8px;
+    background: white;
+    width: 100%;
 }
 
-/* Kontak */
-.kontak {
-    padding: 50px 10%;
-    text-align: center;
-    line-height: 2;
+textarea {
+    height: 90px;
+    resize: vertical;
 }
 
-/* Footer */
+button {
+    padding: 14px;
+    background: #c66b36;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
 footer {
-    background-color: #243b55;
+    background: #603b2b;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
+    line-height: 1.8;
 }
 
-/* Tampilan HP */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        gap: 15px;
+@media (min-width: 700px) {
+    .menu-container {
+        grid-template-columns: repeat(4, 1fr);
     }
 
-    nav a {
-        margin: 5px;
-        font-size: 13px;
-    }
-
-    .produk-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .hero-text h2 {
-        font-size: 27px;
-    }
-}
-
-@media (max-width: 480px) {
-    .produk-container {
-        grid-template-columns: 1fr;
+    .welcome, .category, .menu, .pesan {
+        padding-left: 8%;
+        padding-right: 8%;
     }
 }
